@@ -12,22 +12,22 @@ app.Run(async context =>
     }
     else if (path == "/home/name")
     {
-        await context.Response.WriteAsync("Скорих Артем");
+        await context.Response.WriteAsync("РЎРєРѕСЂРёС… РђСЂС‚РµРј");
     }
     else if (path == "/home/date")
     {
-        await context.Response.WriteAsync($"Назва додатку: HW18.06.24<br>Поточна дата: {DateTime.Now.ToShortDateString()}");
+        await context.Response.WriteAsync($"РќР°Р·РІР° РґРѕРґР°С‚РєСѓ: HW18.06.24<br>РџРѕС‚РѕС‡РЅР° РґР°С‚Р°: {DateTime.Now.ToShortDateString()}");
     }
     else if (path == "/home/tasks")
     {
         await context.Response.WriteAsync(@"
             <html>
                 <body>
-                    <h1>Список справ на сьогодні</h1>
+                    <h1>РЎРїРёСЃРѕРє СЃРїСЂР°РІ РЅР° СЃСЊРѕРіРѕРґРЅС–:</h1>
                     <ul>
-                        <li>Зробити домашню роботу</li>
-                        <li>Вигуляти собаку</li>
-                        <li>Прибрати кімнату</li>
+                        <li>Р—СЂРѕР±РёС‚Рё РґРѕРјР°С€РЅСЋ СЂРѕР±РѕС‚Сѓ</li>
+                        <li>Р’РёРіСѓР»СЏС‚Рё СЃРѕР±Р°РєСѓ</li>
+                        <li>РџСЂРёР±СЂР°С‚Рё РєС–РјРЅР°С‚Сѓ</li>
                     </ul>
                 </body>
             </html>");
